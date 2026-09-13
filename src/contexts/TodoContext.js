@@ -8,16 +8,16 @@ export const TodoContext = createContext({
   searchScope: "current", // 'current' | 'all'
   statusFilter: "all",    // 'all' | 'active' | 'completed'
 
-  addTodo: (todo) => {},
-  updateTodo: (id, updatedTodo) => {},
-  deleteTodo: (id) => {},
-  toggleComplete: (id) => {},
-  setSelectedDate: (dateStr) => {},
-  setSearchQuery: (query) => {},
-  setSearchScope: (scope) => {},
-  setStatusFilter: (filter) => {},
-  rolloverIncompleteTasks: (fromDate, toDate) => {},
-  deleteCompletedForDate: (dateStr) => {},
+  addTodo: () => {},
+  updateTodo: () => {},
+  deleteTodo: () => {},
+  toggleComplete: () => {},
+  setSelectedDate: () => {},
+  setSearchQuery: () => {},
+  setSearchScope: () => {},
+  setStatusFilter: () => {},
+  rolloverIncompleteTasks: () => {},
+  deleteCompletedForDate: () => {},
 });
 
 export const useTodo = () => {
